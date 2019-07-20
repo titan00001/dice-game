@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dice game</title>
+</head>
+<body>
+    <header>
+        <h1>7 Up 7 Down</h1>
+    </header>
+    
+    <div class="container-fluid help-result">
+        <div class="row">
+            <div class="rule col-8">
+                <a id="rule-head"><h4>How to Play</h4></a>
+                <div class="rule-desc">Choose your deal and roll the Dice,<br/>
+                    You will win, if you are wise. <br>
+                <a id="rule-hide">Lets just roll</a>
+                </div>
+            </div>
+
+            <div class="result col-4">
+                <h4>Verdict</h4>
+                <p id="msg">You lost</p>
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="game-arena col-8">
+                <div class="deal">
+                    <h4>Choose Your Deal</h4>
+                    <input class="deal-btn" type="radio" name="deal" value="8"><span>7 Up</span>
+                    <input class="deal-btn" type="radio" name="deal" value="7"><span>7 Equal</span>
+                    <input class="deal-btn" type="radio" name="deal" value="6"><span>7 Down</span>
+                    <button type="button" class="btn btn-dark play">Roll the Dice</button>
+                </div>
+                <div class="dice">
+                    <img id="dice1" src="images/dice-1_640.png" width="100px" alt="">
+                    <img id="dice2" src="images/dice-5_640.png" width="100px" alt="">
+                </div>
+            </div>
+
+            <div class="score col-4">
+                <h4>Score Board</h4>
+                <table class="table table-bordered">
+                    <tr>
+                        <th scope="col">Your</th>
+                        <th scope="col">Dealer</th>
+                    </tr>
+                    <tr>
+                        <td id = "myScore" scope="row">3</td>
+                        <td id = "dealerScore">4</td>
+                    </tr>
+                </table>
+
+                <button type="reset" id="clear" class="btn btn-secondary">Clear</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+       <p>Created by me</p> 
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
