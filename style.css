@@ -1,0 +1,78 @@
+body {
+    background-color: #f3826f;
+}
+
+header {
+    background-color: #27aa80;
+    text-align: center;
+}
+
+h1 {
+    padding: 1% 0 3% 0;
+}
+
+
+/* Help and Result Container */
+.help-result {
+    padding: 2% 5% 2% 5%;
+}
+
+/* Help */
+.rule-desc {
+    display: none;
+}
+
+/* Result */
+.result {
+    text-align: center;
+}
+
+.result p{
+    font-size: 3.5vw;
+}
+
+
+/* game playground */
+.game-arena {
+    background-color: #27aa80;
+}
+
+.deal span {
+    padding: 1% 2%;
+}
+
+.deal h4 {
+    margin: 3% 5% 3% 5%; 
+}
+
+.deal button {
+    margin-left: 10%;
+}
+
+.dice {
+    margin: 5% 0;
+}
+.dice img {
+    margin: 0 5%;
+}
+
+
+/* Score table */
+.score {
+    text-align: center;
+}
+
+.score h4{
+    margin: 3% 0 5% 0;
+}
+
+.score button {
+    margin-top: 5%;
+}
+
+
+footer {
+    background-color: #1c2938;
+    color: #f4f6f6;
+    height: 50px;
+}
